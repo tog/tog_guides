@@ -1,0 +1,16 @@
+h2. Official plugins
+
+This plugins are officially supported and should work with the current version of tog. They are versioned at the same time as tog.
+
+endprologue.
+
+
+* "tog_core":http://github.com/tog/tog_core (core infrastructure)
+* "tog_conversatio":http://github.com/tog/tog_conversatio (blogs)
+* "tog_mail":http://github.com/tog/tog_mail (messaging system)
+* "tog_picto":http://github.com/tog/tog_picto (photos, altough we strongly recomend you to use flickr)
+* "tog_social":http://github.com/tog/tog_social (groups, friendships, sharing and more)
+* "tog_user":http://github.com/tog/tog_user  (login&user management)
+* "tog_vault":http://github.com/tog/tog_vault (CMS)
+* "tog_conclave":http://github.com/tog/tog_conclave  (small event management)
+* "tog_headlines":http://github.com/tog/tog_headlines (stories&news)

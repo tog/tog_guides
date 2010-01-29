@@ -1,0 +1,22 @@
+h2. Contributed plugins
+
+This plugins have been contributed by users. Their state, updateness and completeness depends on different reasons, but they are usable with little affort, if any. 
+
+endprologue.
+
+
+* "tog_forum":http://github.com/aspgems/tog_forum (forums, of course)
+* "tog_beta":http://github.com/jenaiz/tog_beta (beta invitations)
+* "tog_depot":http://github.com/molpe/tog_depot (file sharing)
+* "tog_archive":http://github.com/aspgems/tog_archive// (file sharing too, by ASPGems)
+* "tog_podcasts":http://github.com/molpe/tog_podcasts (podcast channels and episodes)
+* "tog-wiki":http://github.com/mjuneja/tog-wiki  (wiki)
+* "tog-polls":http://github.com/mjuneja/tog-polls (polls)
+* "tog_oracle":http://github.com/tog/tog_oracle (questions&answers)
+* "tog_videos":http://github.com/molpe/tog_videos/ (videos)
+* "tog_faq":http://github.com/tog/tog_faq/ (faq system)
+* "tog_medallion":http://github.com/molpe/tog_medallion/ (awards for users' particpation)
+* "tog_help":http://github.com/jenaiz/tog_help/ (help system, using tog_cms)
+* "tog_job":http://github.com/suratpyari/tog_job/ (job board)
+* "tog_bulletins":http://github.com/molpe/tog_bulletins/ (small bulletings sytem, altough we recomend you tou use campaignmonitor or mailchimp if possible)
+* "tog_wall":http://github.com/pacoguzman/tog_wall/ (A facebook-like wall of comments)

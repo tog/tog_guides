@@ -1,0 +1,87 @@
+h2. Getting started with tog
+
+In this document you will learn in three easy steps how to install and tog in your own applications. Tog is a non-intrusive platform, so you can choose which parts you want to use and which not.
+
+* Installing tog on a new app or on a existing one
+* Learn tog basics
+* Customize some aspects of tog
+
+endprologue.
+
+
+h3. Install
+
+h4. Install requirements
+
+h5. Git
+
+Many plugins are downloaded from Github, who is a service for git repositories, so you will need to install git's binary for your platform. If you are a Linux or Mac user you are lucky!. If you are a windows user you can find some packaged binaries from http://msysgit.googlecode.com .
+
+h5. Gem source
+
+Tog's gems  and plugins, like many others, are hosted in github, so you will need to add github to your list of sources:
+
+<shell>
+gem sources -a http://gems.github.com
+</shell>
+
+h5. ImageMagick
+
+Tog uses [Paperclip](http://www.thoughtbot.com/projects/paperclip) which needs [ImageMagick](http://www.imagemagick.org/) for image processing, so you will need to install it. It isn't always easy, but the features it provides are really _necessary_ for social networks with pages full of scaled photos, so don't be too lazy and install it. You can install via apt, yum, or port, or the package manager of your choice
+
+h4. Create your rails application with tog
+
+Create your webapp with tog's template. Tog 0.6 supports Rails 2.3 only, so if you are not using Rails 2.3, we encourage you to update to that version.
+
+<shell>rails hello_tog -m http://tr.im/tog_current</shell>
+
+or if you prefer the edge version:
+
+<shell>rails hello_tog -m http://tr.im/tog_edge</shell>
+
+This will create the application with tog and all required gems and plugins installed. It will ask you a couple of questions (for example if you need tog_user or you have your own user management), but nothing difficult.
+
+If you already have an existing application, you have a rake task for modifying an application using a template, so you can also use this template for adding to an existing application. It could be easy, since event tog_user is optional, buy anyway we will improve this template to be more flexible. Contact us if you find some cases for improving it. Run inside your application folder the following command:
+
+<shell>rake rails:template LOCATION=http://tr.im/tog_current</shell>
+
+or 
+
+<shell>rake rails:template LOCATION=http://tr.im/tog_edge</shell>
+
+This installs the following tog plugins:
+
+** "tog_core":https://github.com/tog/tog_core/tree
+** "tog_social":https://github.com/tog/tog_social/tree
+** "tog_mail":https://github.com/tog/tog_mail/tree
+
+and optionally:
+
+** "tog_user":https://github.com/tog/tog_user/tree
+
+Now configure your database if needed (default to sqllite) and your email server if you want to. And do it like you always do. Just Rails, not magic.
+
+At this point, you should be able to start your server and see tog's demo application. Check the [[Customizing tog]] guide for information about using and customizing it.
+
+h5. NOTE for versions 0.5.0 to 0.5.4 (not needed for edge and later versions)
+
+There is an *issue* with rails 2.3 and the way desert handles plugins, so in development environment you will need to reload plugins in the same way that classes aren't cached. to do that, just add the following line to config/environment.rb or config/environments/development.rb
+
+<ruby>config.reload_plugins = true if RAILS_ENV == 'development'</ruby>
+
+h4. Install additional plugins
+
+You can install more plugins to your brand new social network. For a list of available plugins check "http://www.toghq.com/tog_plugins":http://www.toghq.com/tog_plugins
+
+h4. Bonus track: Keep updated!
+
+We are working in a system for painless updating and upgrading of your plugins. Unfortunately it isn't finished and still have to decide a couple of things (for example deciding to build a gem for every plugin we use), so you'll need to update/upgrade your installation manually. Just overwritting the given plugin and adding a migrate for each upgraded plugin. It doesn't hurt, believe me.
+
+
+h3. Tog basics
+
+NOTE. todo
+
+h3. Customize tog
+
+NOTE. todo

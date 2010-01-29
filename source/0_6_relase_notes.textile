@@ -1,0 +1,19 @@
+h2. Tog 0.6 Release notes
+
+This version is focused on stability and many other improvements on tog’s core plugins, but this version has updated most of the support plugins used by tog, that were there since tog 0.1 and needed some upgraded.
+
+endprologue.
+
+
+If you start fresh from tog 0.6 or you were already using edge, migration (if needed) should be small. For those of you using an older version of tog, we have a template for upgrading to tog 0.6 (has been already been used to migrate toghq.com) that will be relased in the coming days.
+
+You can check the changelog for every core plugin for changes:
+
+    * "tog_core":http://github.com/tog/tog_core/blob/master/CHANGELOG.md
+    * "tog_user":http://github.com/tog/tog_user/blob/master/CHANGELOG.md
+    * "tog_social":http://github.com/tog/tog_social/blob/master/CHANGELOG.md
+    * "tog_mail":http://github.com/tog/tog_mail/blob/master/CHANGELOG.md
+
+For instructions on installing tog check: "getting started":getting_started.html .
+
+We plan a minor release with some installation improvements and bug fixing in the commings days and tog 0.7 will focus on socializing your app with other social networks like twitter or facebook.
